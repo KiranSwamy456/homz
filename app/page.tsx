@@ -32,8 +32,8 @@ export default function Home() {
 
       {/* Featured Instance 1 */}
       <FeaturedProduct
-        line1="Executive Ergonomic"
-        line2="Office Chair"
+        line1="About Us"
+        line2=""
         body="With contoured lumbar support and height-adjustable arms, built for all-day comfort in commercial workspaces."
         image="/images/product-chair.png"
         imageLeft={false}

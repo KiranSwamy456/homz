@@ -33,7 +33,7 @@ export default function FeaturedProduct({
       </p>
       <div>
         <Link
-          href="/quote"
+          href="#"
           className="inline-block border border-[#1A1A1A] font-sans text-[10px] font-bold tracking-widest uppercase px-5 py-2 text-[#1A1A1A] hover:bg-[#1A1A1A] hover:text-white transition-colors duration-300"
         >
           REQUEST A QUOTE
