@@ -17,15 +17,6 @@ export default function Home() {
         <HeroSplit />
       </div>
 
-      {/* <CollectionSpotlight
-        image="/images/bedroom-new-collection.png"
-        eyebrow="Bedroom New Collectionsss"
-        title="2024–25 New Collection"
-        body="Discover our latest designs emphasizing ergonomics, sustainable materials, and timeless aesthetics for commercial spaces."
-        ctaText="ENQUIRE NOW"
-        imageLeft={true}
-      /> */}
-
       <div id="solutions">
         <BrowseByRoom />
       </div>
@@ -38,15 +29,6 @@ export default function Home() {
         image="/images/product-chair.png"
         imageLeft={false}
       />
-
-      {/* Featured Instance 2 */}
-      {/* <FeaturedProduct
-        line1="Premium Conference"
-        line2="Meeting Table"
-        body="Solid wood veneer with scratch-resistant finish — pairs elegance with durability for boardrooms of all sizes."
-        image="/images/product-table.png"
-        imageLeft={true}
-      /> */}
 
       <MoreProducts />
 

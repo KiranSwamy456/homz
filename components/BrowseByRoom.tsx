@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const solutions = [
   { label: "Office", image: "/images/solution-office.png" },
@@ -37,7 +38,7 @@ export default function BrowseByRoom() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
           {solutions.map((sol, i) => (
-            <div key={i} className="group cursor-pointer">
+            <Link href="/projects" key={i} className="group cursor-pointer block">
               <div className="relative aspect-square w-full rounded-sm overflow-hidden bg-[#0f5a66]">
                 <Image
                   src={sol.image}
@@ -51,7 +52,7 @@ export default function BrowseByRoom() {
               <p className="font-sans text-sm md:text-base text-white text-center mt-4 tracking-wide uppercase font-medium">
                 {sol.label}
               </p>
-            </div>
+            </Link>
           ))}
         </div>
       </div>

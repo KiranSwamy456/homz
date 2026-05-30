@@ -2,7 +2,8 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import { motion, AnimatePresence } from "motion/react";
+import Link from "next/link";
+import { motion, AnimatePresence } from "framer-motion";
 
 type Tab = "Furniture" | "Sofas" | "Tables" | "Storage";
 
@@ -82,7 +83,7 @@ export default function MoreProducts() {
             className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 md:gap-6"
           >
             {products[activeTab].map((product, idx) => (
-              <div key={idx} className="bg-white rounded-sm overflow-hidden group cursor-pointer shadow-sm hover:shadow-md transition-shadow">
+              <Link href="/products" key={idx} className="bg-white rounded-sm overflow-hidden group block shadow-sm hover:shadow-md transition-shadow">
                 <div className="relative aspect-square w-full">
                   <Image
                     src={product.image}
@@ -114,7 +115,7 @@ export default function MoreProducts() {
                     {product.price}
                   </p>
                 </div>
-              </div>
+              </Link>
             ))}
           </motion.div>
         </AnimatePresence>
