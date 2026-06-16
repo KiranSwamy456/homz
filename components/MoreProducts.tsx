@@ -9,30 +9,121 @@ type Tab = "Furniture" | "Sofas" | "Tables" | "Storage";
 
 const tabs: Tab[] = ["Furniture", "Sofas", "Tables", "Storage"];
 
-const products: Record<Tab, { name: string; price: string; room: string; image: string; onSale?: boolean }[]> = {
+const products: Record<
+  Tab,
+  {
+    name: string;
+    price: string;
+    room: string;
+    image: string;
+    onSale?: boolean;
+  }[]
+> = {
   Furniture: [
-    { name: "Executive Chair", price: "₹24,500", room: "Office Space", image: "/images/category-seating.png" },
-    { name: "Work Desk", price: "₹18,000", room: "Office Space", image: "/images/category-desks.png" },
-    { name: "Pedestal Cabinet", price: "₹8,200", room: "Storage", image: "/images/category-storage.png" },
-    { name: "Stack Chair", price: "₹3,600", room: "Event Seating", image: "/images/case-2.png", onSale: true },
+    {
+      name: "Executive Chair",
+      price: "",
+      room: "Office Space",
+      image: "/images/excecutive-chair.png",
+    },
+    {
+      name: "Work Desk",
+      price: "",
+      room: "Office Space",
+      image: "/images/work-desk.png",
+    },
+    {
+      name: "Pedestal Cabinet",
+      price: "",
+      room: "Storage",
+      image: "/images/category-storage.png",
+    },
+    {
+      name: "Stack Chair",
+      price: "",
+      room: "Event Seating",
+      image: "/images/case-2.png",
+      onSale: true,
+    },
   ],
   Sofas: [
-    { name: "Lounge Sofa", price: "₹55,000", room: "Reception", image: "/images/category-seating.png" },
-    { name: "Standing Desk", price: "₹22,000", room: "Office Space", image: "/images/category-desks.png" },
-    { name: "Filing Cabinet", price: "₹12,000", room: "Storage", image: "/images/category-storage.png" },
-    { name: "Bar Stool", price: "₹6,500", room: "Breakout Area", image: "/images/case-3.png" },
+    {
+      name: "Lounge Sofa",
+      price: "",
+      room: "Reception",
+      image: "/images/category-seating.png",
+    },
+    {
+      name: "Standing Desk",
+      price: "",
+      room: "Office Space",
+      image: "/images/category-desks.png",
+    },
+    {
+      name: "Filing Cabinet",
+      price: "",
+      room: "Storage",
+      image: "/images/category-storage.png",
+    },
+    {
+      name: "Bar Stool",
+      price: "",
+      room: "Breakout Area",
+      image: "/images/case-3.png",
+    },
   ],
   Tables: [
-    { name: "Conference Table", price: "₹85,000", room: "Boardroom", image: "/images/category-desks.png" },
-    { name: "Ergonomic Chair", price: "₹31,000", room: "Office Space", image: "/images/category-seating.png" },
-    { name: "Bookshelf", price: "₹14,000", room: "Storage", image: "/images/category-storage.png" },
-    { name: "Visitor Chair", price: "₹7,200", room: "Reception", image: "/images/case-2.png" },
+    {
+      name: "Conference Table",
+      price: "",
+      room: "Boardroom",
+      image: "/images/category-desks.png",
+    },
+    {
+      name: "Ergonomic Chair",
+      price: "",
+      room: "Office Space",
+      image: "/images/Ergonomic.png",
+    },
+    {
+      name: "Bookshelf",
+      price: "",
+      room: "Storage",
+      image: "/images/category-storage.png",
+    },
+    {
+      name: "Visitor Chair",
+      price: "",
+      room: "Reception",
+      image: "/images/case-2.png",
+    },
   ],
   Storage: [
-    { name: "Boardroom Table", price: "₹1,20,000", room: "Boardroom", image: "/images/case-3.png", onSale: true },
-    { name: "Executive Desk", price: "₹45,000", room: "Office Space", image: "/images/category-desks.png" },
-    { name: "Display Cabinet", price: "₹28,000", room: "Retail", image: "/images/category-storage.png" },
-    { name: "Outdoor Chair", price: "₹9,800", room: "Hospitality", image: "/images/category-outdoor.png" },
+    {
+      name: "Boardroom Table",
+      price: "",
+      room: "Boardroom",
+      image: "/images/case-3.png",
+      onSale: true,
+    },
+    {
+      name: "Executive Desk",
+      price: "",
+      room: "Office Space",
+      image: "/images/category-desks.png",
+    },
+    {
+      name: "Display Cabinet",
+      price: "",
+      room: "Retail",
+      image: "/images/category-storage.png",
+    },
+    {
+      name: "Outdoor Chair",
+      price: "",
+      room: "Hospitality",
+      image: "/images/category-outdoor.png",
+    },
   ],
 };
 
@@ -40,7 +131,10 @@ export default function MoreProducts() {
   const [activeTab, setActiveTab] = useState<Tab>("Furniture");
 
   return (
-    <section className="bg-[#1B7E8C] py-20 md:py-28 px-8 relative overflow-hidden" id="products">
+    <section
+      className="bg-[#1B7E8C] py-20 md:py-28 px-8 relative overflow-hidden"
+      id="products"
+    >
       {/* Decorative Botanical SVG - top right */}
       <svg
         className="absolute top-0 right-0 w-64 h-64 text-white opacity-5 translate-x-1/4 -translate-y-1/4 pointer-events-none"
@@ -83,7 +177,11 @@ export default function MoreProducts() {
             className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 md:gap-6"
           >
             {products[activeTab].map((product, idx) => (
-              <Link href="/products" key={idx} className="bg-white rounded-sm overflow-hidden group block shadow-sm hover:shadow-md transition-shadow">
+              <Link
+                href="/products"
+                key={idx}
+                className="bg-white rounded-sm overflow-hidden group block shadow-sm hover:shadow-md transition-shadow"
+              >
                 <div className="relative aspect-square w-full">
                   <Image
                     src={product.image}

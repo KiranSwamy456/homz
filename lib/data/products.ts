@@ -49,7 +49,7 @@ export const PRODUCTS: Product[] = [
     image: "/images/category-seating.png",
     customizable: true,
     featured: true,
-    priceRange: "₹1,20,000 – ₹3,00,000",
+    priceRange: "",
   },
   {
     id: "cls-002",
@@ -62,7 +62,7 @@ export const PRODUCTS: Product[] = [
     image: "/images/case-1.png",
     customizable: true,
     featured: true,
-    priceRange: "₹55,000 – ₹1,20,000",
+    priceRange: "",
   },
   {
     id: "cls-003",
@@ -74,7 +74,7 @@ export const PRODUCTS: Product[] = [
     materialOptions: ["Bonded Leather", "Leatherette"],
     image: "/images/case-2.png",
     customizable: true,
-    priceRange: "₹30,000 – ₹55,000",
+    priceRange: "",
   },
 
   // ── Recliner Sofas ─────────────────────────────────────────
@@ -89,7 +89,7 @@ export const PRODUCTS: Product[] = [
     image: "/images/category-seating.png",
     customizable: true,
     featured: true,
-    priceRange: "₹85,000 – ₹2,50,000",
+    priceRange: "",
   },
   {
     id: "rec-002",
@@ -99,9 +99,9 @@ export const PRODUCTS: Product[] = [
     shortDescription:
       "Manual recliner sofa in genuine leather with plush cushioning and wide armrests for maximum comfort.",
     materialOptions: ["Genuine Leather", "Fabric"],
-    image: "/images/case-3.png",
+    image: "/images/Manual-Recliner.png",
     customizable: true,
-    priceRange: "₹45,000 – ₹85,000",
+    priceRange: "",
   },
 
   // ── Imported Sofa Collections ───────────────────────────────
@@ -113,10 +113,10 @@ export const PRODUCTS: Product[] = [
     shortDescription:
       "European-inspired sofa collection in certified imported leather with a modern, clean silhouette.",
     materialOptions: ["Imported Certified Leather"],
-    image: "/images/lifestyle-contact.png",
+    image: "/images/Imported.png",
     customizable: false,
     featured: true,
-    priceRange: "₹1,50,000 – ₹3,00,000",
+    priceRange: "",
   },
   {
     id: "imp-002",
@@ -126,9 +126,9 @@ export const PRODUCTS: Product[] = [
     shortDescription:
       "Modular Italian-style sofa with interchangeable sections, available in imported leather and premium fabric.",
     materialOptions: ["Imported Leather", "Premium Fabric"],
-    image: "/images/case-1.png",
+    image: "/images/Modular.png",
     customizable: false,
-    priceRange: "₹1,20,000 – ₹2,50,000",
+    priceRange: "",
   },
 
   // ── Beds ───────────────────────────────────────────────────
@@ -140,10 +140,10 @@ export const PRODUCTS: Product[] = [
     shortDescription:
       "Upholstered king bed with leather-wrapped headboard, solid wood slats, and custom sizing available.",
     materialOptions: ["Leather", "Velvet", "Fabric"],
-    image: "/images/bedroom-new-collection.png",
+    image: "/images/Upholstered.png",
     customizable: true,
     featured: true,
-    priceRange: "₹1,20,000 – ₹1,80,000",
+    priceRange: "",
   },
   {
     id: "bed-002",
@@ -153,9 +153,9 @@ export const PRODUCTS: Product[] = [
     shortDescription:
       "Queen bed with hydraulic storage base, fabric headboard, and premium mattress support structure.",
     materialOptions: ["Fabric", "Leatherette"],
-    image: "/images/bedroom-new-collection.png",
+    image: "/images/storage.png",
     customizable: true,
-    priceRange: "₹65,000 – ₹1,20,000",
+    priceRange: "",
   },
 
   // ── Chairs ─────────────────────────────────────────────────
@@ -167,10 +167,10 @@ export const PRODUCTS: Product[] = [
     shortDescription:
       "Premium leather armchair with solid wood legs and high-resilience foam. Ideal for executive offices and lounges.",
     materialOptions: ["Full-Grain Leather", "Semi-Aniline Leather"],
-    image: "/images/product-chair.png",
+    image: "/images/Leather.png",
     customizable: true,
     featured: true,
-    priceRange: "₹50,000 – ₹70,000",
+    priceRange: "",
   },
   {
     id: "chr-002",
@@ -180,9 +180,9 @@ export const PRODUCTS: Product[] = [
     shortDescription:
       "Stylish accent chair in fabric or leather finish, suitable for living rooms, lobbies, and hotel rooms.",
     materialOptions: ["Fabric", "Genuine Leather"],
-    image: "/images/product-chair.png",
+    image: "/images/Lounge.png",
     customizable: true,
-    priceRange: "₹25,000 – ₹50,000",
+    priceRange: "",
   },
 
   // ── Accessories ────────────────────────────────────────────
@@ -196,7 +196,7 @@ export const PRODUCTS: Product[] = [
     materialOptions: ["Leather", "Fabric", "Velvet"],
     image: "/images/category-storage.png",
     customizable: true,
-    priceRange: "₹15,000 – ₹35,000",
+    priceRange: "",
   },
 
   // ── Customized Pure Leather Sofas ──────────────────────────
@@ -211,7 +211,7 @@ export const PRODUCTS: Product[] = [
     image: "/images/category-seating.png",
     customizable: true,
     featured: true,
-    priceRange: "₹1,50,000 – ₹3,00,000+",
+    priceRange: "",
   },
   {
     id: "cpls-002",
@@ -221,9 +221,9 @@ export const PRODUCTS: Product[] = [
     shortDescription:
       "Classic Chesterfield design in hand-stitched pure leather. Choose any size, colour, and buttoning pattern.",
     materialOptions: ["Pure Leather", "Aniline Leather"],
-    image: "/images/case-3.png",
+    image: "/images/Chesterfield.png",
     customizable: true,
-    priceRange: "₹1,20,000 – ₹2,50,000",
+    priceRange: "",
   },
 ];
 
