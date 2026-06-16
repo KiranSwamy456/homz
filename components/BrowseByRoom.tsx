@@ -4,7 +4,7 @@ import Link from "next/link";
 const solutions = [
   { label: "Office", image: "/images/solution-office.png" },
   { label: "Hospitality", image: "/images/solution-hospitality.png" },
-  { label: "Restaurant", image: "/images/solution-restaurant.png" },
+  { label: "Restaurant", image: "/images/restaurent.png" },
   { label: "Education", image: "/images/solution-education.png" },
 ];
 
@@ -38,7 +38,11 @@ export default function BrowseByRoom() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
           {solutions.map((sol, i) => (
-            <Link href="/projects" key={i} className="group cursor-pointer block">
+            <Link
+              href="/projects"
+              key={i}
+              className="group cursor-pointer block"
+            >
               <div className="relative aspect-square w-full rounded-sm overflow-hidden bg-[#0f5a66]">
                 <Image
                   src={sol.image}
