@@ -50,11 +50,11 @@ export default function ProductsPage() {
       {/* ── Hero ─────────────────────────────────────────── */}
       <PageHero
         eyebrow="Our Collections"
-        title="Furniture Crafted for Every Space & Budget"
-        subtitle="From pure leather customised sofas to imported collections and premium beds — explore furniture built with care, quality, and craftsmanship."
-        cta={{ text: "Browse All Products", href: "#product-grid" }}
-        image="/images/category-seating.png"
-        imageAlt="HomzIndia premium leather sofa collection"
+        title="Our Premium Collections"
+        subtitle="Explore our wide range of Lounge Chairs, Beds, Sofas, Recliners, and Ottomans. Find the perfect piece for your luxury home or commercial space."
+        cta={{ text: "Download Brochure", href: "/contact" }}
+        image="/images/products/orange-l-shaped-leather-sectional-sofa.jpg"
+        imageAlt="Premium leather sectional sofa"
         imageLeft={false}
       />
 
@@ -85,60 +85,7 @@ export default function ProductsPage() {
         </div>
       </section>
 
-      {/* ── Indicative Pricing ───────────────────────────── */}
-      <section className="bg-[#F5F0EB] py-20 md:py-28 px-8">
-        <div className="max-w-5xl mx-auto">
-          <SectionHeader
-            eyebrow="Pricing Guide"
-            heading="Indicative Price Ranges"
-            subtext="Prices are indicative and vary based on size, design, material, leather type, and customisation requirements."
-          />
 
-          <div className="overflow-x-auto rounded-sm">
-            <table className="w-full border-collapse bg-white shadow-sm">
-              <thead>
-                <tr className="bg-[#1B7E8C] text-white">
-                  <th className="font-sans text-[11px] font-bold uppercase tracking-widest text-left px-6 py-4">
-                    Category
-                  </th>
-                  <th className="font-sans text-[11px] font-bold uppercase tracking-widest text-left px-6 py-4">
-                    Indicative Range
-                  </th>
-                  <th className="font-sans text-[11px] font-bold uppercase tracking-widest text-left px-6 py-4 hidden sm:table-cell">
-                    Segments Available
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                {PRICING_ROWS.map((row, idx) => (
-                  <tr
-                    key={row.category}
-                    className={`border-b border-[#E0EAEC] last:border-none ${idx % 2 === 1 ? "bg-[#faf8f5]" : "bg-white"}`}
-                  >
-                    <td className="font-sans text-sm text-[#1A1A1A] font-medium px-6 py-4">
-                      {row.category}
-                    </td>
-                    <td className="font-sans text-sm font-semibold text-[#1B7E8C] px-6 py-4">
-                      {row.range}
-                    </td>
-                    <td className="font-sans text-xs text-[#888] px-6 py-4 hidden sm:table-cell">
-                      {row.segments}
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-
-          <div className="mt-6 flex items-start gap-3 bg-white border border-[#E0EAEC] rounded-sm p-5">
-            <span className="text-[#F47920] font-sans font-bold text-sm shrink-0">*</span>
-            <p className="font-sans text-sm text-[#666] leading-relaxed">
-              Final pricing depends on size, design, material, leather type, customisation
-              requirement, and order quantity. Contact us or request a quote for an accurate estimate.
-            </p>
-          </div>
-        </div>
-      </section>
 
       {/* ── CTA ──────────────────────────────────────────── */}
       <QuoteCTA

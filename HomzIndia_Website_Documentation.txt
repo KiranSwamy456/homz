@@ -1,0 +1,83 @@
+HomzIndia - Complete Website Documentation
+==================================================
+
+Ee document lo HomzIndia website (Next.js 15, Tailwind CSS, TypeScript) yokka poorthi architecture, pages, mariyu components gurinchi detailed ga vivarinchabadindi.
+
+--------------------------------------------------
+1. GLOBAL COMPONENTS (Anni pages lo unde sections)
+--------------------------------------------------
+- Navbar: Top navigation menu. Desktop kosam links, Mobile kosam hamburger menu, mariyu "Quote Cart" icon untundi.
+- Footer: Kinda unde section. Dinlo Quick Links, Categories, Contact Info mariyu Copyright untayi.
+- Quote Cart Drawer: Right side nunchi open ayye sliding cart. User select cheskunna products anni ikkada list avuthayi. "Send to WhatsApp" button dwara inquiry send cheyochu.
+- Mobile Sticky Bar: Mobile view lo matrame kanipinche bottom bar. "Call", "WhatsApp", "Quote Cart" buttons direct ga access cheyadaniki untayi.
+
+--------------------------------------------------
+2. PAGES (Website lo unna motham 8 pages)
+--------------------------------------------------
+
+1. Home Page (/)
+   - HeroSplit: Main landing section. Left side pedda image, Right side content mariyu "Explore Collection" CTA.
+   - CollectionSpotlight: B2B mariyu premium collections ni highlight chese section.
+   - BrowseByRoom: Office, Hospitality, Restaurant lanti different rooms/sectors ni chupinche section.
+   - FeaturedProduct: Oka specific premium product ni highlight chesthu chupinche section.
+   - MoreProducts: Different tabs (Sofas, Chairs, Beds) petti list of products ni chupinche slider/grid.
+   - ContactNewsletter: Email capture form.
+   - InstagramStrip: Instagram handle ni promote chese image strip.
+
+2. About Us Page (/about)
+   - PageHero: Top banner section with title.
+   - Statistics (StatCard): Company experience, square feet factory area, clients data chupinche counters.
+   - Core Values (FeatureCard): Quality, craftsmanship, B2B focus gurinchi details.
+   - QuoteCTA: Bottom lo unde "Request a Custom Quote" / "Call Us" call-to-action banner.
+
+3. Contact Page (/contact)
+   - PageHero: Contact title banner.
+   - Contact Info: Office address, Phone numbers (WhatsApp, Call), Email id cards using Lucide icons.
+   - ContactForm: Name, Email, Phone, Company, Message, mariyu Upload Image field tho unde interactive form.
+
+4. Customization Page (/customization)
+   - PageHero: "Bespoke Furniture" title banner.
+   - Process Steps: Custom furniture ela chestharo step-by-step chupinche section (Design, Material Selection, Prototyping, Delivery).
+   - Features (FeatureCard): Material quality mariyu craftsmanship gurinchi info.
+   - QuoteCTA: "Start Your Custom Project" banner.
+
+5. Manufacturing Page (/manufacturing)
+   - PageHero: "Our Infrastructure" banner.
+   - Factory Stats: Factory capacity, machines, workers count chupinche section.
+   - ProcessTimeline: Raw material nunchi final finish varaku manufacturing flow chupinche timeline UI.
+   - Features (FeatureCard): Quality control, modern machinery details.
+   - QuoteCTA: Bottom action banner.
+
+6. Products Page (/products)
+   - PageHero: "Our Collections" banner.
+   - ProductsGrid: Categories (Leather Sofas, Recliners, Beds, etc.) tho filter cheskune interactive grid. Prathi product ki "Add to Quote" button untundi.
+   - Best Sellers: Featured products list matrame highlight chese bottom grid.
+   - QuoteCTA: Bottom banner.
+
+7. Projects / Portfolio Page (/projects)
+   - PageHero: "Our Work & Projects" banner.
+   - ProjectsGallery: Hospitality, Office, Residential sectors ga filter cheskune project images gallery.
+   - QuoteCTA: Bottom banner.
+
+8. Trade & Wholesale Page (/trade)
+   - PageHero: B2B customers kosam banner.
+   - B2B Benefits (FeatureCard): Bulk discounts, dedicated manager, fast delivery lanti trade features.
+   - Target Sectors: Hotels, Offices, Architects, Interior Designers ki elanti services istharo chupinche section.
+   - QuoteCTA: "Become a Partner" banner.
+
+--------------------------------------------------
+3. DATA & CONFIGURATION (Backend data files)
+--------------------------------------------------
+- lib/data/products.ts: Website lo unde products, veti categories, price ranges, images, descriptions ikkada store avuthayi.
+- lib/data/projects.ts: Portfolio page lo chupinche completed projects data (Hotels, Offices).
+- lib/data/stats.ts: About mariyu Manufacturing pages lo unde numbers (10+ years, 500+ clients).
+- lib/config.ts: Central brand info! WhatsApp number, Phone number, Email, Address, Instagram handle anni ikkada okachote maristhe website motham maruthayi.
+
+--------------------------------------------------
+4. TECHNICAL HIGHLIGHTS
+--------------------------------------------------
+- Quote Cart System: Idi Zustand state management library dwara build cheyabaddadi. User ye page lo product add chesina, cart update avthundi. Cart open chesi WhatsApp ki direct ga format ayina message vellutundi.
+- Tailwind CSS v4: Latest styling framework use chesi responsive (Mobile, Tablet, Desktop) ga design cheyabadindi.
+- Framer Motion: Pages and grids load ayyentappudu smooth fade-in and sliding animations kosam idi vadamu.
+
+Ee document lo website lo unna prathi aspect ni cover chesanu. Idi project root folder lo save cheyabadindi.

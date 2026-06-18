@@ -31,11 +31,11 @@ export default function ProjectsPage() {
       <PageHero
         eyebrow="Portfolio"
         title="Our Work, In Every Space"
-        subtitle="From luxury homes to institutional projects — explore some of the spaces we've furnished with care, craftsmanship, and customisation."
-        cta={{ text: "Start Your Custom Project", href: "/contact" }}
-        image="/images/solution-hospitality.png"
-        imageAlt="HomzIndia completed furniture project"
-        imageLeft={false}
+        subtitle="From elegant residential lounge setups to large-scale hotel furnishings — see how our custom furniture transforms spaces."
+        cta={{ text: "Discuss Your Project", href: "/contact" }}
+        image="/images/products/ivory-rust-swivel-lounge-chair.jpg"
+        imageAlt="Ivory and rust swivel lounge chair"
+        imageLeft={true}
       />
 
       {/* ── Use-case overview ─────────────────────────────── */}

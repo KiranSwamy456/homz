@@ -5,9 +5,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 
-type Tab = "Furniture" | "Sofas" | "Tables" | "Storage";
+type Tab = "Featured" | "Sofas" | "Lounge Chairs" | "Beds" | "Recliners" | "Ottomans";
 
-const tabs: Tab[] = ["Furniture", "Sofas", "Tables", "Storage"];
+const tabs: Tab[] = ["Featured", "Sofas", "Lounge Chairs", "Beds", "Recliners", "Ottomans"];
 
 const products: Record<
   Tab,
@@ -19,116 +19,136 @@ const products: Record<
     onSale?: boolean;
   }[]
 > = {
-  Furniture: [
+  Featured: [
     {
-      name: "Executive Chair",
+      name: "Grey & Black Swivel Lounge Chair",
       price: "",
-      room: "Office Space",
-      image: "/images/excecutive-chair.png",
+      room: "Lounge Chairs",
+      image: "/images/products/grey-black-swivel-lounge-chair.jpg",
     },
     {
-      name: "Work Desk",
+      name: "White Modern Platform Bed",
       price: "",
-      room: "Office Space",
-      image: "/images/work-desk.png",
+      room: "Beds",
+      image: "/images/products/white-modern-platform-bed.jpg",
     },
     {
-      name: "Pedestal Cabinet",
+      name: "Orange L-Shaped Leather Sectional Sofa",
       price: "",
-      room: "Storage",
-      image: "/images/category-storage.png",
+      room: "Sofas",
+      image: "/images/products/orange-l-shaped-leather-sectional-sofa.jpg",
     },
     {
-      name: "Stack Chair",
+      name: "Tan Leather Recliner Lounge Chair",
       price: "",
-      room: "Event Seating",
-      image: "/images/case-2.png",
-      onSale: true,
+      room: "Recliners",
+      image: "/images/products/tan-leather-recliner-lounge-chair.jpg",
     },
   ],
   Sofas: [
     {
-      name: "Lounge Sofa",
+      name: "Modern Grey Living Room Sofa Set",
       price: "",
-      room: "Reception",
-      image: "/images/category-seating.png",
+      room: "Sofas",
+      image: "/images/products/modern-grey-living-room-sofa-set.jpg",
     },
     {
-      name: "Standing Desk",
+      name: "Burnt Orange Leather Sofa Set",
       price: "",
-      room: "Office Space",
-      image: "/images/category-desks.png",
+      room: "Sofas",
+      image: "/images/products/burnt-orange-leather-sofa-set.jpg",
     },
     {
-      name: "Filing Cabinet",
+      name: "Slate Blue Sectional Sofa Set",
       price: "",
-      room: "Storage",
-      image: "/images/category-storage.png",
+      room: "Sofas",
+      image: "/images/products/slate-blue-sectional-sofa-set.jpg",
     },
     {
-      name: "Bar Stool",
+      name: "Royal Blue Recliner Sofa Set",
       price: "",
-      room: "Breakout Area",
-      image: "/images/case-3.png",
-    },
-  ],
-  Tables: [
-    {
-      name: "Conference Table",
-      price: "",
-      room: "Boardroom",
-      image: "/images/category-desks.png",
-    },
-    {
-      name: "Ergonomic Chair",
-      price: "",
-      room: "Office Space",
-      image: "/images/Ergonomic.png",
-    },
-    {
-      name: "Bookshelf",
-      price: "",
-      room: "Storage",
-      image: "/images/category-storage.png",
-    },
-    {
-      name: "Visitor Chair",
-      price: "",
-      room: "Reception",
-      image: "/images/case-2.png",
+      room: "Sofas",
+      image: "/images/products/royal-blue-recliner-sofa-set.jpg",
     },
   ],
-  Storage: [
+  "Lounge Chairs": [
     {
-      name: "Boardroom Table",
+      name: "Tan Leather Accent Lounge Chair",
       price: "",
-      room: "Boardroom",
-      image: "/images/case-3.png",
-      onSale: true,
+      room: "Lounge Chairs",
+      image: "/images/products/tan-leather-accent-lounge-chair.jpg",
     },
     {
-      name: "Executive Desk",
+      name: "Mocha Barrel Lounge Chair",
       price: "",
-      room: "Office Space",
-      image: "/images/category-desks.png",
+      room: "Lounge Chairs",
+      image: "/images/products/mocha-barrel-lounge-chair.jpg",
     },
     {
-      name: "Display Cabinet",
+      name: "Teal Executive Lounge Chair",
       price: "",
-      room: "Retail",
-      image: "/images/category-storage.png",
+      room: "Lounge Chairs",
+      image: "/images/products/teal-executive-lounge-chair.jpg",
     },
     {
-      name: "Outdoor Chair",
+      name: "Ivory & Rust Swivel Lounge Chair",
       price: "",
-      room: "Hospitality",
-      image: "/images/category-outdoor.png",
+      room: "Lounge Chairs",
+      image: "/images/products/ivory-rust-swivel-lounge-chair.jpg",
+    },
+  ],
+  Beds: [
+    {
+      name: "Grey Upholstered Platform Bed",
+      price: "",
+      room: "Beds",
+      image: "/images/products/grey-upholstered-platform-bed.jpg",
+    },
+    {
+      name: "Beige Premium Upholstered Bed",
+      price: "",
+      room: "Beds",
+      image: "/images/products/beige-premium-upholstered-bed.jpg",
+    },
+    {
+      name: "Cream Luxury Panel Bed",
+      price: "",
+      room: "Beds",
+      image: "/images/products/cream-luxury-panel-bed.jpg",
+    },
+    {
+      name: "White Modern Platform Bed",
+      price: "",
+      room: "Beds",
+      image: "/images/products/white-modern-platform-bed.jpg",
+    },
+  ],
+  Recliners: [
+    {
+      name: "Tan Leather Recliner Lounge Chair",
+      price: "",
+      room: "Recliners",
+      image: "/images/products/tan-leather-recliner-lounge-chair.jpg",
+    },
+  ],
+  Ottomans: [
+    {
+      name: "Round Fabric Pouffe Set",
+      price: "",
+      room: "Ottomans",
+      image: "/images/products/round-fabric-pouffe-set.jpg",
+    },
+    {
+      name: "Mustard Fabric Ottoman Pouffe",
+      price: "",
+      room: "Ottomans",
+      image: "/images/products/mustard-fabric-ottoman-pouffe.jpg",
     },
   ],
 };
 
 export default function MoreProducts() {
-  const [activeTab, setActiveTab] = useState<Tab>("Furniture");
+  const [activeTab, setActiveTab] = useState<Tab>("Featured");
 
   return (
     <section

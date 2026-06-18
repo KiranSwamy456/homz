@@ -26,7 +26,7 @@ export default function Home() {
         line1="About Us"
         line2=""
         body="With contoured lumbar support and height-adjustable arms, built for all-day comfort in commercial workspaces."
-        image="/images/product-chair.png"
+        image="/images/products/tan-leather-accent-lounge-chair.jpg"
         imageLeft={false}
       />
 

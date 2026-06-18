@@ -87,13 +87,7 @@ export default function ProductCard({ product }: ProductCardProps) {
           ))}
         </div>
 
-        {/* Indicative price */}
-        {product.priceRange && (
-          <p className="font-sans text-xs font-semibold text-[#1B7E8C] mb-4">
-            {product.priceRange}
-            <span className="text-[#aaa] font-normal ml-1">(indicative)</span>
-          </p>
-        )}
+        {/* Prices hidden as per request */}
 
         {/* CTA */}
         <button

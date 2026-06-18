@@ -44,7 +44,7 @@ export default function ContactNewsletter() {
       {/* Center: Image */}
       <div className="relative h-[500px] md:h-auto order-1 md:order-2">
         <Image
-          src="/images/lifestyle-contact.png"
+          src="/images/products/beige-tufted-swivel-lounge-chair.jpg"
           alt="Modern Commercial Furniture Lifestyle"
           fill
           sizes="(max-width: 768px) 100vw, 33vw"

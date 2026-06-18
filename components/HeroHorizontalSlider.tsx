@@ -10,21 +10,27 @@ const AUTO_MS = 6000;
 const slides = [
   {
     eyebrow: "HOMZINDIA IS",
-    title: "Premium B2B Furniture",
-    image: "/images/hero.png",
-    alt: "Modern conference room with city views",
+    title: "Premium Custom Furniture, Crafted for You",
+    image: "/images/products/premium-beige-living-room-sofa-set.jpg",
+    alt: "Premium beige living room sofa set",
   },
   {
-    eyebrow: "HOMZINDIA IS",
-    title: "Contract-Grade Workspaces",
-    image: "/images/product-table.png",
-    alt: "Premium conference meeting table",
+    eyebrow: "LUXURY SEATING",
+    title: "Uncompromising Comfort & Style",
+    image: "/images/products/brown-leather-lounge-sofa-set.jpg",
+    alt: "Brown leather lounge sofa set",
   },
   {
-    eyebrow: "HOMZINDIA IS",
-    title: "Seating Built for Long Days",
-    image: "/images/product-chair.png",
-    alt: "Executive ergonomic office chair",
+    eyebrow: "BESPOKE BEDS",
+    title: "Platform Beds Built for Luxury",
+    image: "/images/products/white-modern-platform-bed.jpg",
+    alt: "White modern platform bed",
+  },
+  {
+    eyebrow: "LARGE SCALE",
+    title: "Manufacturing Built for Bulk Orders",
+    image: "/images/manufacture-banner.jpg",
+    alt: "HomzIndia Manufacturing",
   },
 ] as const;
 

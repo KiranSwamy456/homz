@@ -48,9 +48,9 @@ export default function ContactPage() {
       <PageHero
         eyebrow="Get in Touch"
         title="Let's Build Something Together"
-        subtitle="Share your requirement and our team will get back to you within 24–48 hours with a detailed, personalised quote."
-        image="/images/lifestyle-contact.png"
-        imageAlt="HomzIndia contact and quote request"
+        subtitle="Looking for a custom sectional sofa or a bulk order of executive lounge chairs? Share your requirements and get a personalized quote."
+        image="/images/products/teal-executive-lounge-chair.jpg"
+        imageAlt="Teal executive lounge chair"
         imageLeft={false}
       />
 

@@ -31,7 +31,7 @@ const SEGMENT_OPTIONS = [
     tagBg: "bg-[#888]",
     desc: "Durable, functional furniture crafted for everyday use. Best for homes, hostels, and institutional requirements where comfort and longevity matter more than luxury detailing.",
     highlights: ["Bonded Leather & Leatherette options", "3+2 sofa sets & L-shapes", "Durable frame construction", "Ideal for bulk orders"],
-    image: "/images/case-2.png",
+    image: "/images/products/grey-black-swivel-lounge-chair.jpg",
   },
   {
     name: "Mid-Range",
@@ -39,7 +39,7 @@ const SEGMENT_OPTIONS = [
     tagBg: "bg-[#1B7E8C]",
     desc: "The sweet spot of quality and affordability. Genuine leather upholstery, solid construction, and beautiful finishes — suitable for premium homes, offices, and hospitality interiors.",
     highlights: ["Genuine leather & quality fabric", "Wide range of designs", "Office & hospitality-grade", "Customisation available"],
-    image: "/images/case-1.png",
+    image: "/images/products/grey-recliner-sofa-set.jpg",
   },
   {
     name: "Premium & Luxury",
@@ -47,7 +47,7 @@ const SEGMENT_OPTIONS = [
     tagBg: "bg-[#F47920]",
     desc: "Bespoke furniture crafted with imported certified leather, solid hardwood frames, and precision finishing. For clients who demand nothing but the best in their homes, hotels, or showrooms.",
     highlights: ["Imported pure & full-grain leather", "Custom dimensions & designs", "Motorised recliner options", "Luxury finishing & detailing"],
-    image: "/images/lifestyle-contact.png",
+    image: "/images/products/ivory-rust-swivel-lounge-chair.jpg",
   },
 ];
 
@@ -78,10 +78,10 @@ export default function CustomizationPage() {
       <PageHero
         eyebrow="Custom Manufacturing"
         title="Furniture Built Around Your Space"
-        subtitle="We don't sell furniture off a shelf. Every piece we make is designed around your dimensions, your design preference, and your budget — from Value Segment to Premium & Luxury."
-        cta={{ text: "Share Your Requirement", href: "/contact" }}
-        image="/images/bedroom-new-collection.png"
-        imageAlt="HomzIndia customised sofa manufacturing"
+        subtitle="Whether it's an L-shaped leather sectional or a custom fabric ottoman, every piece is tailored to your exact dimensions, style, and budget."
+        cta={{ text: "Discuss Your Requirement", href: "/contact" }}
+        image="/images/products/mustard-yellow-premium-sofa-set.jpg"
+        imageAlt="Custom mustard yellow premium sofa"
         imageLeft={false}
       />
 
@@ -89,7 +89,7 @@ export default function CustomizationPage() {
       <section className="flex flex-col md:grid md:grid-cols-2 md:min-h-[70vh]">
         <div className="relative h-[50vh] min-h-[300px] md:h-auto">
           <Image
-            src="/images/solution-office.png"
+            src="/images/products/orange-l-shaped-leather-sectional-sofa.jpg"
             alt="Space-based furniture customisation"
             fill
             sizes="(max-width: 768px) 100vw, 50vw"
@@ -160,7 +160,7 @@ export default function CustomizationPage() {
         </div>
         <div className="relative h-[50vh] min-h-[300px] md:h-auto order-1 md:order-2">
           <Image
-            src="/images/case-3.png"
+            src="/images/products/mustard-yellow-premium-sofa-set.jpg"
             alt="Design-based customisation"
             fill
             sizes="(max-width: 768px) 100vw, 50vw"

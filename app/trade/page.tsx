@@ -75,12 +75,11 @@ export default function TradePage() {
       {/* ── Hero ─────────────────────────────────────────── */}
       <PageHero
         eyebrow="Trade & Wholesale"
-        title="Furniture Manufacturing Support for Businesses"
-        subtitle="HomzIndia is a trusted manufacturing partner for furniture stores, dealers, franchise partners, interior designers, and institutional buyers across India."
-        cta={{ text: "Discuss Business Requirement", href: "/contact" }}
-        secondaryCta={{ text: "Our Manufacturing", href: "/manufacturing" }}
-        image="/images/solution-office.png"
-        imageAlt="HomzIndia B2B trade and wholesale furniture"
+        title="Manufacturing Support for Businesses"
+        subtitle="A trusted B2B partner for furniture stores, architects, and interior designers requiring high-quality bulk sofas, beds, and seating solutions."
+        cta={{ text: "Partner With Us", href: "/contact" }}
+        image="/images/products/grey-black-swivel-lounge-chair.jpg"
+        imageAlt="Premium lounge chair for business"
         imageLeft={false}
       />
 
@@ -136,7 +135,7 @@ export default function TradePage() {
         </div>
         <div className="relative h-[50vh] min-h-[300px] md:h-auto order-1 md:order-2">
           <Image
-            src="/images/case-2.png"
+            src="/images/products/grey-black-swivel-lounge-chair.jpg"
             alt="Bulk furniture order"
             fill
             sizes="(max-width: 768px) 100vw, 50vw"
@@ -149,7 +148,7 @@ export default function TradePage() {
       <section className="flex flex-col md:grid md:grid-cols-2 md:min-h-[70vh]">
         <div className="relative h-[50vh] min-h-[300px] md:h-auto">
           <Image
-            src="/images/lifestyle-contact.png"
+            src="/images/products/teal-executive-lounge-chair.jpg"
             alt="Custom furniture manufacturing"
             fill
             sizes="(max-width: 768px) 100vw, 50vw"

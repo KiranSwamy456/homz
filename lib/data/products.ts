@@ -1,15 +1,8 @@
-// ─────────────────────────────────────────────────────────────
+// -------------------------------------------------------------
 //  HomzIndia — Product Catalog Data
-// ─────────────────────────────────────────────────────────────
+// -------------------------------------------------------------
 
-export type ProductCategory =
-  | "Leather Sofas"
-  | "Recliner Sofas"
-  | "Imported Sofa Collections"
-  | "Beds"
-  | "Chairs"
-  | "Accessories"
-  | "Customized Pure Leather Sofas";
+export type ProductCategory = "Lounge Chairs" | "Beds" | "Sofas" | "Recliners" | "Ottomans";
 
 export type ProductSegment = "Value Segment" | "Mid-Range" | "Premium & Luxury";
 
@@ -17,6 +10,7 @@ export interface Product {
   id: string;
   name: string;
   category: ProductCategory;
+  subCategory?: string;
   segment: ProductSegment;
   shortDescription: string;
   materialOptions: string[];
@@ -27,204 +21,404 @@ export interface Product {
 }
 
 export const ALL_CATEGORIES: ProductCategory[] = [
-  "Leather Sofas",
-  "Recliner Sofas",
-  "Imported Sofa Collections",
+  "Lounge Chairs",
   "Beds",
-  "Chairs",
-  "Accessories",
-  "Customized Pure Leather Sofas",
+  "Sofas",
+  "Recliners",
+  "Ottomans"
 ];
 
 export const PRODUCTS: Product[] = [
-  // ── Leather Sofas ──────────────────────────────────────────
   {
-    id: "cls-001",
-    name: "Milano Pure Leather Sofa",
-    category: "Leather Sofas",
-    segment: "Premium & Luxury",
-    shortDescription:
-      "Handcrafted in imported certified full-grain leather with deep-button tufting and solid hardwood frame.",
-    materialOptions: ["Full-Grain Leather", "Semi-Aniline Leather", "Nubuck"],
-    image: "/images/category-seating.png",
-    customizable: true,
-    featured: true,
-    priceRange: "",
+    "id": "prod-001",
+    "name": "Grey & Black Swivel Lounge Chair",
+    "category": "Lounge Chairs",
+    "subCategory": "Lounge Chair",
+    "segment": "Premium & Luxury",
+    "shortDescription": "A sophisticated swivel lounge chair in a striking grey and black contrast, perfect for modern offices and executive suites.",
+    "materialOptions": ["Premium Fabric", "Genuine Leather", "Vegan Leather"],
+    "image": "/images/products/grey-black-swivel-lounge-chair.jpg",
+    "customizable": true,
+    "featured": true,
+    "priceRange": "₹35,000 — ₹65,000"
   },
   {
-    id: "cls-002",
-    name: "Heritage 3-Seater Leather Sofa",
-    category: "Leather Sofas",
-    segment: "Mid-Range",
-    shortDescription:
-      "Classic design with high-density foam seating and genuine leather upholstery. Ideal for homes and offices.",
-    materialOptions: ["Genuine Leather", "PU Leather"],
-    image: "/images/case-1.png",
-    customizable: true,
-    featured: true,
-    priceRange: "",
+    "id": "prod-002",
+    "name": "Tan Leather Accent Lounge Chair",
+    "category": "Lounge Chairs",
+    "subCategory": "Lounge Chair",
+    "segment": "Premium & Luxury",
+    "shortDescription": "An exquisite tan leather accent chair with deep seating, offering a vintage yet contemporary feel to your living space.",
+    "materialOptions": ["Top-Grain Leather", "Aniline Leather"],
+    "image": "/images/products/tan-leather-accent-lounge-chair.jpg",
+    "customizable": true,
+    "featured": true,
+    "priceRange": "₹45,000 — ₹85,000"
   },
   {
-    id: "cls-003",
-    name: "Comfort Plus Leather Sofa",
-    category: "Leather Sofas",
-    segment: "Value Segment",
-    shortDescription:
-      "Durable bonded leather sofa built for everyday comfort. Available in L-shape and 3+2 configurations.",
-    materialOptions: ["Bonded Leather", "Leatherette"],
-    image: "/images/case-2.png",
-    customizable: true,
-    priceRange: "",
-  },
-
-  // ── Recliner Sofas ─────────────────────────────────────────
-  {
-    id: "rec-001",
-    name: "Royal Electric Recliner Sofa",
-    category: "Recliner Sofas",
-    segment: "Premium & Luxury",
-    shortDescription:
-      "Motorised recliner with USB charging ports, premium leather, and adjustable headrest. Perfect for luxury living rooms.",
-    materialOptions: ["Full-Grain Leather", "Fabric"],
-    image: "/images/category-seating.png",
-    customizable: true,
-    featured: true,
-    priceRange: "",
+    "id": "prod-003",
+    "name": "Mocha Barrel Lounge Chair",
+    "category": "Lounge Chairs",
+    "subCategory": "Lounge Chair",
+    "segment": "Premium & Luxury",
+    "shortDescription": "A plush, barrel-style lounge chair in a warm mocha shade, designed to provide cozy wrap-around comfort.",
+    "materialOptions": ["Velvet", "Premium Suede", "Fabric"],
+    "image": "/images/products/mocha-barrel-lounge-chair.jpg",
+    "customizable": true,
+    "featured": true,
+    "priceRange": "₹30,000 — ₹55,000"
   },
   {
-    id: "rec-002",
-    name: "Relax Pro Manual Recliner",
-    category: "Recliner Sofas",
-    segment: "Mid-Range",
-    shortDescription:
-      "Manual recliner sofa in genuine leather with plush cushioning and wide armrests for maximum comfort.",
-    materialOptions: ["Genuine Leather", "Fabric"],
-    image: "/images/Manual-Recliner.png",
-    customizable: true,
-    priceRange: "",
-  },
-
-  // ── Imported Sofa Collections ───────────────────────────────
-  {
-    id: "imp-001",
-    name: "Barcelona Imported Collection",
-    category: "Imported Sofa Collections",
-    segment: "Premium & Luxury",
-    shortDescription:
-      "European-inspired sofa collection in certified imported leather with a modern, clean silhouette.",
-    materialOptions: ["Imported Certified Leather"],
-    image: "/images/Imported.png",
-    customizable: false,
-    featured: true,
-    priceRange: "",
+    "id": "prod-004",
+    "name": "Ivory & Rust Swivel Lounge Chair",
+    "category": "Lounge Chairs",
+    "subCategory": "Lounge Chair",
+    "segment": "Premium & Luxury",
+    "shortDescription": "Elegant swivel chair featuring a dynamic two-tone ivory and rust design, adding a pop of color and luxury to any room.",
+    "materialOptions": ["Premium Fabric", "Velvet"],
+    "image": "/images/products/ivory-rust-swivel-lounge-chair.jpg",
+    "customizable": true,
+    "featured": true,
+    "priceRange": "₹38,000 — ₹60,000"
   },
   {
-    id: "imp-002",
-    name: "Venezia Modular Sofa",
-    category: "Imported Sofa Collections",
-    segment: "Premium & Luxury",
-    shortDescription:
-      "Modular Italian-style sofa with interchangeable sections, available in imported leather and premium fabric.",
-    materialOptions: ["Imported Leather", "Premium Fabric"],
-    image: "/images/Modular.png",
-    customizable: false,
-    priceRange: "",
-  },
-
-  // ── Beds ───────────────────────────────────────────────────
-  {
-    id: "bed-001",
-    name: "Palazzo King Upholstered Bed",
-    category: "Beds",
-    segment: "Premium & Luxury",
-    shortDescription:
-      "Upholstered king bed with leather-wrapped headboard, solid wood slats, and custom sizing available.",
-    materialOptions: ["Leather", "Velvet", "Fabric"],
-    image: "/images/Upholstered.png",
-    customizable: true,
-    featured: true,
-    priceRange: "",
+    "id": "prod-005",
+    "name": "Teal Executive Lounge Chair",
+    "category": "Lounge Chairs",
+    "subCategory": "Lounge Chair",
+    "segment": "Premium & Luxury",
+    "shortDescription": "A statement teal executive chair built with ergonomic precision, ideal for long hours of comfortable seating.",
+    "materialOptions": ["Top-Grain Leather", "Premium Fabric"],
+    "image": "/images/products/teal-executive-lounge-chair.jpg",
+    "customizable": true,
+    "featured": true,
+    "priceRange": "₹42,000 — ₹75,000"
   },
   {
-    id: "bed-002",
-    name: "Comfort Storage Bed",
-    category: "Beds",
-    segment: "Mid-Range",
-    shortDescription:
-      "Queen bed with hydraulic storage base, fabric headboard, and premium mattress support structure.",
-    materialOptions: ["Fabric", "Leatherette"],
-    image: "/images/storage.png",
-    customizable: true,
-    priceRange: "",
-  },
-
-  // ── Chairs ─────────────────────────────────────────────────
-  {
-    id: "chr-001",
-    name: "Executive Leather Armchair",
-    category: "Chairs",
-    segment: "Premium & Luxury",
-    shortDescription:
-      "Premium leather armchair with solid wood legs and high-resilience foam. Ideal for executive offices and lounges.",
-    materialOptions: ["Full-Grain Leather", "Semi-Aniline Leather"],
-    image: "/images/Leather.png",
-    customizable: true,
-    featured: true,
-    priceRange: "",
+    "id": "prod-006",
+    "name": "White Modern Platform Bed",
+    "category": "Beds",
+    "subCategory": "Bed",
+    "segment": "Premium & Luxury",
+    "shortDescription": "A sleek, low-profile white platform bed that brings minimalist elegance and luxury to the master bedroom.",
+    "materialOptions": ["Genuine Leather", "Vegan Leather"],
+    "image": "/images/products/white-modern-platform-bed.jpg",
+    "customizable": true,
+    "featured": true,
+    "priceRange": "₹85,000 — ₹1,50,000"
   },
   {
-    id: "chr-002",
-    name: "Accent Lounge Chair",
-    category: "Chairs",
-    segment: "Mid-Range",
-    shortDescription:
-      "Stylish accent chair in fabric or leather finish, suitable for living rooms, lobbies, and hotel rooms.",
-    materialOptions: ["Fabric", "Genuine Leather"],
-    image: "/images/Lounge.png",
-    customizable: true,
-    priceRange: "",
-  },
-
-  // ── Accessories ────────────────────────────────────────────
-  {
-    id: "acc-001",
-    name: "Premium Ottoman",
-    category: "Accessories",
-    segment: "Mid-Range",
-    shortDescription:
-      "Leather or fabric tufted ottoman — perfect as a footrest, accent piece, or extra seating.",
-    materialOptions: ["Leather", "Fabric", "Velvet"],
-    image: "/images/category-storage.png",
-    customizable: true,
-    priceRange: "",
-  },
-
-  // ── Customized Pure Leather Sofas ──────────────────────────
-  {
-    id: "cpls-001",
-    name: "Pure Leather L-Shape Custom Sofa",
-    category: "Customized Pure Leather Sofas",
-    segment: "Premium & Luxury",
-    shortDescription:
-      "Fully bespoke L-shape sofa in imported pure leather, built precisely to your room dimensions and design.",
-    materialOptions: ["Imported Pure Leather", "Full-Grain Leather"],
-    image: "/images/category-seating.png",
-    customizable: true,
-    featured: true,
-    priceRange: "",
+    "id": "prod-007",
+    "name": "Grey Upholstered Platform Bed",
+    "category": "Beds",
+    "subCategory": "Bed",
+    "segment": "Premium & Luxury",
+    "shortDescription": "Featuring a tall, tufted grey headboard, this upholstered bed combines structural durability with unmatched comfort.",
+    "materialOptions": ["Premium Fabric", "Velvet"],
+    "image": "/images/products/grey-upholstered-platform-bed.jpg",
+    "customizable": true,
+    "featured": false,
+    "priceRange": "₹75,000 — ₹1,35,000"
   },
   {
-    id: "cpls-002",
-    name: "Custom Leather Chesterfield",
-    category: "Customized Pure Leather Sofas",
-    segment: "Premium & Luxury",
-    shortDescription:
-      "Classic Chesterfield design in hand-stitched pure leather. Choose any size, colour, and buttoning pattern.",
-    materialOptions: ["Pure Leather", "Aniline Leather"],
-    image: "/images/Chesterfield.png",
-    customizable: true,
-    priceRange: "",
+    "id": "prod-008",
+    "name": "Beige Premium Upholstered Bed",
+    "category": "Beds",
+    "subCategory": "Bed",
+    "segment": "Premium & Luxury",
+    "shortDescription": "A highly refined beige upholstered bed designed with intricate stitching and an oversized headboard for maximum impact.",
+    "materialOptions": ["Premium Fabric", "Suede", "Leatherette"],
+    "image": "/images/products/beige-premium-upholstered-bed.jpg",
+    "customizable": true,
+    "featured": false,
+    "priceRange": "₹90,000 — ₹1,80,000"
   },
+  {
+    "id": "prod-009",
+    "name": "Cream Luxury Panel Bed",
+    "category": "Beds",
+    "subCategory": "Bed",
+    "segment": "Premium & Luxury",
+    "shortDescription": "Transform your bedroom into a sanctuary with this cream panel bed, boasting luxurious padding and exquisite craftsmanship.",
+    "materialOptions": ["Genuine Leather", "Premium Fabric"],
+    "image": "/images/products/cream-luxury-panel-bed.jpg",
+    "customizable": true,
+    "featured": false,
+    "priceRange": "₹95,000 — ₹2,00,000"
+  },
+  {
+    "id": "prod-010",
+    "name": "Beige Tufted Swivel Lounge Chair",
+    "category": "Lounge Chairs",
+    "subCategory": "Lounge Chair",
+    "segment": "Premium & Luxury",
+    "shortDescription": "A beautifully tufted beige lounge chair with a smooth swivel mechanism, blending classic tufting with modern utility.",
+    "materialOptions": ["Premium Fabric", "Velvet"],
+    "image": "/images/products/beige-tufted-swivel-lounge-chair.jpg",
+    "customizable": true,
+    "featured": false,
+    "priceRange": "₹32,000 — ₹55,000"
+  },
+  {
+    "id": "prod-011",
+    "name": "Tan Leather Recliner Lounge Chair",
+    "category": "Recliners",
+    "subCategory": "Recliner",
+    "segment": "Premium & Luxury",
+    "shortDescription": "A high-end tan leather recliner that provides exceptional lumbar support and a smooth recline for total relaxation.",
+    "materialOptions": ["Top-Grain Leather", "Italian Leather"],
+    "image": "/images/products/tan-leather-recliner-lounge-chair.jpg",
+    "customizable": true,
+    "featured": false,
+    "priceRange": "₹55,000 — ₹1,10,000"
+  },
+  {
+    "id": "prod-012",
+    "name": "Round Fabric Pouffe Set",
+    "category": "Ottomans",
+    "subCategory": "Pouffe / Ottoman",
+    "segment": "Premium & Luxury",
+    "shortDescription": "A versatile set of round fabric pouffes, perfect for extra seating or as an elegant accent piece in any corner.",
+    "materialOptions": ["Premium Fabric", "Velvet", "Cotton Blend"],
+    "image": "/images/products/round-fabric-pouffe-set.jpg",
+    "customizable": true,
+    "featured": false,
+    "priceRange": "₹12,000 — ₹25,000"
+  },
+  {
+    "id": "prod-013",
+    "name": "Grey Fabric Swivel Accent Chair",
+    "category": "Lounge Chairs",
+    "subCategory": "Lounge Chair",
+    "segment": "Premium & Luxury",
+    "shortDescription": "A space-saving, modern grey fabric accent chair with a smooth 360-degree swivel base.",
+    "materialOptions": ["Premium Fabric", "Linen"],
+    "image": "/images/products/grey-fabric-swivel-accent-chair.jpg",
+    "customizable": true,
+    "featured": false,
+    "priceRange": "₹28,000 — ₹48,000"
+  },
+  {
+    "id": "prod-014",
+    "name": "Orange Swivel Lounge Chair",
+    "category": "Lounge Chairs",
+    "subCategory": "Lounge Chair",
+    "segment": "Premium & Luxury",
+    "shortDescription": "Inject vibrancy into your interiors with this bold orange swivel chair, featuring curved armrests and deep cushioning.",
+    "materialOptions": ["Premium Fabric", "Velvet"],
+    "image": "/images/products/orange-swivel-lounge-chair.jpg",
+    "customizable": true,
+    "featured": false,
+    "priceRange": "₹34,000 — ₹52,000"
+  },
+  {
+    "id": "prod-015",
+    "name": "Mustard Fabric Ottoman Pouffe",
+    "category": "Ottomans",
+    "subCategory": "Ottoman",
+    "segment": "Premium & Luxury",
+    "shortDescription": "A striking mustard ottoman that acts as a plush footrest or extra seating, adding a touch of contemporary flair.",
+    "materialOptions": ["Premium Fabric", "Velvet"],
+    "image": "/images/products/mustard-fabric-ottoman-pouffe.jpg",
+    "customizable": true,
+    "featured": false,
+    "priceRange": "₹15,000 — ₹28,000"
+  },
+  {
+    "id": "prod-016",
+    "name": "Grey & Rust Accent Lounge Chair",
+    "category": "Lounge Chairs",
+    "subCategory": "Lounge Chair",
+    "segment": "Premium & Luxury",
+    "shortDescription": "A beautifully contoured accent chair blending cool grey and warm rust tones, set on a sleek metal frame.",
+    "materialOptions": ["Premium Fabric", "Vegan Leather"],
+    "image": "/images/products/grey-rust-accent-lounge-chair.jpg",
+    "customizable": true,
+    "featured": false,
+    "priceRange": "₹35,000 — ₹60,000"
+  },
+  {
+    "id": "prod-017",
+    "name": "Modern Grey Living Room Sofa Set",
+    "category": "Sofas",
+    "subCategory": "Sofa Set",
+    "segment": "Premium & Luxury",
+    "shortDescription": "A complete, modern grey sofa set tailored with clean lines and deep seats for a sophisticated living room setup.",
+    "materialOptions": ["Premium Fabric", "Linen Blend"],
+    "image": "/images/products/modern-grey-living-room-sofa-set.jpg",
+    "customizable": true,
+    "featured": false,
+    "priceRange": "₹85,000 — ₹1,60,000"
+  },
+  {
+    "id": "prod-018",
+    "name": "Premium Beige Living Room Sofa Set",
+    "category": "Sofas",
+    "subCategory": "Sofa Set",
+    "segment": "Premium & Luxury",
+    "shortDescription": "Luxurious beige sofa set featuring overstuffed cushions and a timeless silhouette, ideal for large families.",
+    "materialOptions": ["Genuine Leather", "Premium Fabric"],
+    "image": "/images/products/premium-beige-living-room-sofa-set.jpg",
+    "customizable": true,
+    "featured": false,
+    "priceRange": "₹1,20,000 — ₹2,50,000"
+  },
+  {
+    "id": "prod-019",
+    "name": "Burnt Orange Leather Sofa Set",
+    "category": "Sofas",
+    "subCategory": "Sofa Set",
+    "segment": "Premium & Luxury",
+    "shortDescription": "A show-stopping burnt orange leather sofa set that brings warmth, character, and undeniable luxury to your home.",
+    "materialOptions": ["Top-Grain Leather", "Italian Leather"],
+    "image": "/images/products/burnt-orange-leather-sofa-set.jpg",
+    "customizable": true,
+    "featured": false,
+    "priceRange": "₹1,50,000 — ₹3,20,000"
+  },
+  {
+    "id": "prod-020",
+    "name": "Slate Blue Sectional Sofa Set",
+    "category": "Sofas",
+    "subCategory": "Sectional Sofa",
+    "segment": "Premium & Luxury",
+    "shortDescription": "A sprawling slate blue sectional sofa designed for ultimate lounging, featuring modular pieces for custom layouts.",
+    "materialOptions": ["Premium Fabric", "Velvet"],
+    "image": "/images/products/slate-blue-sectional-sofa-set.jpg",
+    "customizable": true,
+    "featured": false,
+    "priceRange": "₹1,10,000 — ₹2,10,000"
+  },
+  {
+    "id": "prod-021",
+    "name": "Royal Blue Recliner Sofa Set",
+    "category": "Sofas",
+    "subCategory": "Recliner Sofa",
+    "segment": "Premium & Luxury",
+    "shortDescription": "A majestic royal blue recliner sofa set that seamlessly integrates push-back recliners without compromising on style.",
+    "materialOptions": ["Genuine Leather", "Vegan Leather"],
+    "image": "/images/products/royal-blue-recliner-sofa-set.jpg",
+    "customizable": true,
+    "featured": false,
+    "priceRange": "₹1,40,000 — ₹2,80,000"
+  },
+  {
+    "id": "prod-022",
+    "name": "Orange L-Shaped Leather Sectional Sofa",
+    "category": "Sofas",
+    "subCategory": "L-Shaped Sofa",
+    "segment": "Premium & Luxury",
+    "shortDescription": "A dynamic orange L-shaped sectional offering expansive seating, wrapped in premium leather for a durable, bold finish.",
+    "materialOptions": ["Top-Grain Leather", "Italian Leather"],
+    "image": "/images/products/orange-l-shaped-leather-sectional-sofa.jpg",
+    "customizable": true,
+    "featured": true,
+    "priceRange": "₹1,80,000 — ₹3,50,000"
+  },
+  {
+    "id": "prod-023",
+    "name": "Mustard Yellow Premium Sofa Set",
+    "category": "Sofas",
+    "subCategory": "Sofa Set",
+    "segment": "Premium & Luxury",
+    "shortDescription": "Brighten your space with this mustard yellow premium sofa set, featuring a robust wooden frame and ultra-plush seating.",
+    "materialOptions": ["Velvet", "Premium Fabric"],
+    "image": "/images/products/mustard-yellow-premium-sofa-set.jpg",
+    "customizable": true,
+    "featured": false,
+    "priceRange": "₹95,000 — ₹1,80,000"
+  },
+  {
+    "id": "prod-024",
+    "name": "Grey Recliner Sofa Set",
+    "category": "Sofas",
+    "subCategory": "Recliner Sofa",
+    "segment": "Premium & Luxury",
+    "shortDescription": "Enjoy movie nights in absolute comfort with this grey recliner sofa set, equipped with smooth, silent reclining mechanisms.",
+    "materialOptions": ["Genuine Leather", "Premium Fabric"],
+    "image": "/images/products/grey-recliner-sofa-set.jpg",
+    "customizable": true,
+    "featured": false,
+    "priceRange": "₹1,30,000 — ₹2,40,000"
+  },
+  {
+    "id": "prod-025",
+    "name": "Olive Green Living Room Sofa Set",
+    "category": "Sofas",
+    "subCategory": "Sofa Set",
+    "segment": "Premium & Luxury",
+    "shortDescription": "Bring a touch of nature indoors with this olive green sofa set, expertly upholstered and designed with elegant, tapered legs.",
+    "materialOptions": ["Premium Fabric", "Suede"],
+    "image": "/images/products/olive-green-living-room-sofa-set.jpg",
+    "customizable": true,
+    "featured": false,
+    "priceRange": "₹90,000 — ₹1,70,000"
+  },
+  {
+    "id": "prod-026",
+    "name": "Ivory L-Shaped Sectional Sofa",
+    "category": "Sofas",
+    "subCategory": "L-Shaped Sofa",
+    "segment": "Premium & Luxury",
+    "shortDescription": "A pristine ivory L-shaped sectional that acts as the luxurious centerpiece for expansive, contemporary living spaces.",
+    "materialOptions": ["Genuine Leather", "Top-Grain Leather"],
+    "image": "/images/products/ivory-l-shaped-sectional-sofa.jpg",
+    "customizable": true,
+    "featured": false,
+    "priceRange": "₹1,60,000 — ₹3,20,000"
+  },
+  {
+    "id": "prod-027",
+    "name": "Beige Three-Seater Sofa Set",
+    "category": "Sofas",
+    "subCategory": "Sofa Set",
+    "segment": "Premium & Luxury",
+    "shortDescription": "A classic beige three-seater with perfectly proportioned armrests and dense foam cushions for lasting shape and comfort.",
+    "materialOptions": ["Premium Fabric", "Linen"],
+    "image": "/images/products/beige-three-seater-sofa-set.jpg",
+    "customizable": true,
+    "featured": false,
+    "priceRange": "₹65,000 — ₹1,20,000"
+  },
+  {
+    "id": "prod-028",
+    "name": "Olive Grey Premium Sofa Set",
+    "category": "Sofas",
+    "subCategory": "Sofa Set",
+    "segment": "Premium & Luxury",
+    "shortDescription": "An understated olive grey sofa set featuring deep tufting and a sturdy hardwood frame for generations of use.",
+    "materialOptions": ["Genuine Leather", "Premium Fabric"],
+    "image": "/images/products/olive-grey-premium-sofa-set.jpg",
+    "customizable": true,
+    "featured": false,
+    "priceRange": "₹1,10,000 — ₹2,20,000"
+  },
+  {
+    "id": "prod-029",
+    "name": "Sage Green Corner Sofa Set",
+    "category": "Sofas",
+    "subCategory": "Corner Sofa",
+    "segment": "Premium & Luxury",
+    "shortDescription": "Maximize your room's potential with this sage green corner sofa, offering ample seating and a serene, calming aesthetic.",
+    "materialOptions": ["Premium Fabric", "Velvet"],
+    "image": "/images/products/sage-green-corner-sofa-set.jpg",
+    "customizable": true,
+    "featured": false,
+    "priceRange": "₹1,25,000 — ₹2,10,000"
+  },
+  {
+    "id": "prod-030",
+    "name": "Brown Leather Lounge Sofa Set",
+    "category": "Sofas",
+    "subCategory": "Sofa Set",
+    "segment": "Premium & Luxury",
+    "shortDescription": "The quintessential brown leather sofa set, exuding masculine elegance and aging beautifully to develop a unique patina.",
+    "materialOptions": ["Top-Grain Leather", "Aniline Leather"],
+    "image": "/images/products/brown-leather-lounge-sofa-set.jpg",
+    "customizable": true,
+    "featured": false,
+    "priceRange": "₹1,50,000 — ₹3,00,000"
+  }
 ];
 
 export const BEST_SELLERS = PRODUCTS.filter((p) => p.featured);

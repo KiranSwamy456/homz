@@ -58,10 +58,10 @@ export default function AboutPage() {
       <PageHero
         eyebrow="Our Story"
         title="Built on Craftsmanship, Scale & Trust"
-        subtitle="Since May 2008, HomzIndia has been manufacturing premium customised sofas and furniture from Hyderabad — serving homes, offices, hotels, schools, and institutions across India."
+        subtitle="Since 2008, HomzIndia has been crafting premium sofas, recliners, and lounge furniture from Hyderabad — serving luxury homes, hotels, and institutions."
         cta={{ text: "Request a Custom Quote", href: "/contact" }}
-        image="/images/solution-hospitality.png"
-        imageAlt="HomzIndia premium furniture"
+        image="/images/products/brown-leather-lounge-sofa-set.jpg"
+        imageAlt="HomzIndia premium brown leather lounge sofa"
         imageLeft={false}
       />
 
@@ -92,7 +92,7 @@ export default function AboutPage() {
           </div>
           <div className="flex-1 relative h-[400px] md:h-[520px] w-full rounded-sm overflow-hidden">
             <Image
-              src="/images/lifestyle-contact.png"
+              src="/images/products/royal-blue-recliner-sofa-set.jpg"
               alt="HomzIndia showroom and manufacturing"
               fill
               sizes="(max-width: 768px) 100vw, 50vw"
@@ -147,7 +147,7 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-12 md:gap-20 items-center">
           <div className="flex-1 relative h-[350px] w-full rounded-sm overflow-hidden">
             <Image
-              src="/images/category-seating.png"
+              src="/images/products/ivory-l-shaped-sectional-sofa.jpg"
               alt="HomzIndia leather quality"
               fill
               sizes="(max-width: 768px) 100vw, 50vw"

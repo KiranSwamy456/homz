@@ -2,10 +2,10 @@ import Image from "next/image";
 import Link from "next/link";
 
 const solutions = [
-  { label: "Office", image: "/images/solution-office.png" },
-  { label: "Hospitality", image: "/images/solution-hospitality.png" },
-  { label: "Restaurant", image: "/images/restaurent.png" },
-  { label: "Education", image: "/images/solution-education.png" },
+  { label: "Sofas", image: "/images/products/orange-l-shaped-leather-sectional-sofa.jpg" },
+  { label: "Lounge Chairs", image: "/images/products/grey-black-swivel-lounge-chair.jpg" },
+  { label: "Beds", image: "/images/products/white-modern-platform-bed.jpg" },
+  { label: "Recliners", image: "/images/products/tan-leather-recliner-lounge-chair.jpg" },
 ];
 
 export default function BrowseByRoom() {
@@ -30,10 +30,10 @@ export default function BrowseByRoom() {
 
       <div className="relative z-10 max-w-7xl mx-auto">
         <h2 className="font-serif text-4xl md:text-5xl text-white text-center">
-          Browse by Solution
+          Browse by Category
         </h2>
         <p className="font-sans text-base md:text-lg text-white/70 text-center mt-3 mb-14 max-w-md mx-auto">
-          An easy way to explore furniture for the space you need.
+          Explore premium furniture by product type.
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
