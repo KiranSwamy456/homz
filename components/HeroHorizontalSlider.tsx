@@ -27,10 +27,10 @@ const slides = [
     alt: "White modern platform bed",
   },
   {
-    eyebrow: "LARGE SCALE",
-    title: "Manufacturing Built for Bulk Orders",
-    image: "/images/manufacture-banner.jpg",
-    alt: "HomzIndia Manufacturing",
+    eyebrow: "END-TO-END CAPABILITY",
+    title: "From Manufacturing to Doorstep Delivery",
+    image: "/furnitures/manufacture-making.jpg",
+    alt: "HomzIndia Manufacturing & Delivery",
   },
 ] as const;
 

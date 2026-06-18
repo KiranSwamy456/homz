@@ -138,25 +138,25 @@ export default function ManufacturingPage() {
             className="object-cover"
           />
         </div>
-        <div className="bg-[#1A1A1A] flex flex-col justify-center px-8 md:px-16 py-16 md:py-0">
-          <span className="font-sans text-[10px] uppercase tracking-widest text-white/40 mb-4 block">
+        <div className="bg-[#F5F0EB] flex flex-col justify-center px-8 md:px-16 py-16 md:py-0">
+          <span className="font-sans text-[10px] uppercase tracking-widest text-[#888] mb-4 block">
             Our Commitment
           </span>
-          <h2 className="font-serif text-4xl md:text-5xl text-white leading-tight mb-6">
+          <h2 className="font-serif text-4xl md:text-5xl text-[#1A1A1A] leading-tight mb-6">
             Quality at Every Step, <span className="text-[#F47920]">Without Exception</span>
           </h2>
-          <p className="font-sans text-base text-white/65 leading-relaxed mb-4">
+          <p className="font-sans text-base text-[#666] leading-relaxed mb-4">
             Since 2008, we have expanded from a 6,600 sq. ft. workshop to a 30,000 sq. ft.
             manufacturing powerhouse — all while maintaining the same standard of craft that
             built our reputation.
           </p>
-          <p className="font-sans text-base text-white/65 leading-relaxed mb-8">
+          <p className="font-sans text-base text-[#666] leading-relaxed mb-8">
             We use imported certified leather and premium materials. Every frame is built to last.
             Every seam is hand-finished. Every product carries our 24-month warranty.
           </p>
           <div className="flex flex-wrap gap-3">
             {["Imported Certified Leather", "Solid Hardwood Frames", "24-Month Warranty", "ISO-Grade Quality Checks"].map((tag) => (
-              <span key={tag} className="flex items-center gap-1.5 font-sans text-[10px] uppercase tracking-wide text-white/60 border border-white/20 px-3 py-1.5">
+              <span key={tag} className="flex items-center gap-1.5 font-sans text-[10px] uppercase tracking-wide text-[#666] border border-[#ccc] px-3 py-1.5">
                 <CheckCircle className="w-3 h-3 text-[#1B7E8C]" />
                 {tag}
               </span>

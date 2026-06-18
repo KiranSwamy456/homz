@@ -20,7 +20,6 @@ const NAV_LINKS = [
   { name: "About", href: "/about" },
   { name: "Products", href: "/products" },
   { name: "Customization", href: "/customization" },
-  { name: "Projects", href: "/projects" },
   { name: "Manufacturing", href: "/manufacturing" },
   { name: "Trade & Wholesale", href: "/trade" },
   { name: "Contact", href: "/contact" },

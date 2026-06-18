@@ -101,7 +101,7 @@ export default function TradePage() {
 
       {/* ── Bulk Order Support ────────────────────────────── */}
       <section className="flex flex-col md:grid md:grid-cols-2 md:min-h-[70vh]">
-        <div className="bg-[#1A1A1A] flex flex-col justify-center px-8 md:px-16 py-16 md:py-0 order-2 md:order-1">
+        <div className="bg-[#1B7E8C] flex flex-col justify-center px-8 md:px-16 py-16 md:py-0 order-2 md:order-1">
           <span className="font-sans text-[10px] uppercase tracking-widest text-white/40 mb-4 block">
             Bulk Orders
           </span>
@@ -128,7 +128,7 @@ export default function TradePage() {
           </ul>
           <Link
             href="/contact"
-            className="inline-block bg-[#1B7E8C] text-white font-sans text-[10px] font-bold tracking-widest uppercase px-6 py-3.5 hover:bg-[#0f5a66] transition-colors w-fit"
+            className="inline-block bg-white text-[#1B7E8C] font-sans text-[10px] font-bold tracking-widest uppercase px-6 py-3.5 hover:bg-gray-100 transition-colors w-fit"
           >
             Enquire About Bulk Orders
           </Link>

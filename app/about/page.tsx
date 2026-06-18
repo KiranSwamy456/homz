@@ -8,44 +8,52 @@ import SectionHeader from "@/components/SectionHeader";
 import StatCard from "@/components/StatCard";
 import FeatureCard from "@/components/FeatureCard";
 import QuoteCTA from "@/components/QuoteCTA";
-import { COMPANY_STATS } from "@/lib/data/stats";
 
 export const metadata: Metadata = {
   title: "About HomzIndia — Built on Craftsmanship, Scale & Trust",
   description:
-    "Founded in 2008 in Hyderabad, HomzIndia has grown to a 30,000 sq. ft. manufacturing facility producing 750+ furniture sets per month. Learn our story.",
+    "Established in May 2013 in Hyderabad, HomzIndia has grown to a 30,000 sq. ft. manufacturing facility producing 750+ furniture sets per month. Learn our story.",
 };
+
+const COMPANY_STATS = [
+  { label: "Established", value: "2013" },
+  { label: "Manufacturing Space", value: "30,000", suffix: " sq.ft." },
+  { label: "Monthly Capacity", value: "750", suffix: "+ sets" },
+  { label: "Products Delivered", value: "1,38,000", suffix: "+" },
+  { label: "Team Members", value: "55", suffix: "+" },
+  { label: "Warranty", value: "24", suffix: " Months" },
+];
 
 const WHY_ITEMS = [
   {
     Icon: Award,
     title: "Top Manufacturer in Hyderabad",
-    body: "One of the leading customized sofa and furniture manufacturers in Hyderabad, trusted by thousands of homes, offices, and institutions across India.",
+    body: "One of the top 3 furniture makers in Hyderabad for customized sofas, catering to low, middle, and premium segments.",
   },
   {
     Icon: Layers,
     title: "Imported Certified Leather",
-    body: "We source imported, certified leather and premium materials, tested for durability, texture, and finish — so your furniture ages beautifully.",
+    body: "We source imported, certified licensed materials from China, tested for durability, texture, and finish — ensuring superior quality standards.",
   },
   {
     Icon: Factory,
     title: "30,000 Sq. Ft. Facility",
-    body: "A modern manufacturing facility with dedicated zones for frame construction, upholstery, leather work, and rigorous quality inspection.",
+    body: "Expanded from a 6,600 sq. ft. facility to a massive 30,000 sq. ft. manufacturing powerhouse equipped for large scale production.",
   },
   {
     Icon: Users,
     title: "55+ Skilled Craftsmen",
-    body: "A trained ground team of 55+ craftsmen who bring expertise, care, and attention to detail to every custom furniture piece.",
+    body: "A dedicated ground team of 55+ professionals who bring precision, care, and passion to every unique product we manufacture.",
   },
   {
     Icon: Star,
-    title: "Premium Finish Quality",
-    body: "Every product undergoes thorough inspection for seam alignment, cushion density, and surface finish before leaving our facility.",
+    title: "End-to-End Customization",
+    body: "We specialize in space-based and design-based customization for any space, perfectly matching your style and comfort requirements.",
   },
   {
-    Icon: Shield,
-    title: "24-Month Warranty",
-    body: "We stand behind every piece we manufacture with a 24-month warranty covering manufacturing defects and material quality.",
+    Icon: Award,
+    title: "Proven Track Record",
+    body: "Over 1,38,000 furniture sets successfully delivered across India through our B2B networks, stores, and franchises.",
   },
 ];
 
@@ -58,7 +66,7 @@ export default function AboutPage() {
       <PageHero
         eyebrow="Our Story"
         title="Built on Craftsmanship, Scale & Trust"
-        subtitle="Since 2008, HomzIndia has been crafting premium sofas, recliners, and lounge furniture from Hyderabad — serving luxury homes, hotels, and institutions."
+        subtitle="Since May 2013, HomzIndia has been crafting premium sofas, recliners, and custom furniture from Hyderabad — serving luxury homes, offices, and institutions across India."
         cta={{ text: "Request a Custom Quote", href: "/contact" }}
         image="/images/products/brown-leather-lounge-sofa-set.jpg"
         imageAlt="HomzIndia premium brown leather lounge sofa"
@@ -70,24 +78,22 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-12 md:gap-20 items-center">
           <div className="flex-1">
             <span className="font-sans text-[10px] uppercase tracking-widest text-[#888] mb-4 block">
-              Our Journey
+              About Us
             </span>
             <h2 className="font-serif text-4xl md:text-5xl text-[#1A1A1A] leading-tight mb-6">
-              From a workshop to a 30,000 sq. ft. manufacturing powerhouse
+              From a 6,600 sq. ft. facility to a 30,000 sq. ft. manufacturing powerhouse
             </h2>
             <p className="font-sans text-base text-[#666] leading-relaxed mb-4">
-              HomzIndia was founded in May 2008 in Hyderabad with a single belief — that every family
-              and business deserves furniture that is truly made for them. Starting from a modest 6,600
-              sq. ft. workshop, we have grown into one of Hyderabad&apos;s most trusted furniture manufacturers.
+              Established in Hyderabad in May 2013, we are one of the leading manufacturers of custom furniture, known for delivering premium-quality craftsmanship and personalized furniture solutions. From low, middle, to premium-category furniture, we specialize in creating products that perfectly match customers&apos; space, style, and comfort requirements.
             </p>
             <p className="font-sans text-base text-[#666] leading-relaxed mb-4">
-              Today, our 30,000 sq. ft. production facility operates at a capacity of over 750 sets
-              per month, with a skilled team of 55+ craftsmen producing everything from pure leather
-              customised sofas to recliner collections, beds, and institutional furniture.
+              Our expertise includes imported sofa collections, recliner sofas, leather sofas, beds, chairs, and fully customized pure leather sofas exclusively designed for homes. Backed by a skilled team of 55 dedicated professionals, we use imported certified leather and licensed materials from China to ensure superior quality standards.
+            </p>
+            <p className="font-sans text-base text-[#666] leading-relaxed mb-4">
+              Today, we manufacture around 750 sets per month and have successfully delivered approximately 1,38,000 furniture sets across India through our stores, B2B network, and franchises. Our product range caters to various segments, with sofas ranging from ₹30,000 to ₹3,00,000, premium beds from ₹1.2 lakh to ₹1.5 lakh, and luxury chairs around ₹30,000.
             </p>
             <p className="font-sans text-base text-[#666] leading-relaxed">
-              With a presence across India through our store and franchise network, and over 1,38,000
-              sets delivered, HomzIndia continues to lead with quality, customisation, and commitment.
+              What makes us unique is our ability to customize sofas and furniture for any space and design requirement. Customer trust is our biggest strength, and we proudly deliver across the city with a reputation built on trust, premium materials, and customized excellence.
             </p>
           </div>
           <div className="flex-1 relative h-[400px] md:h-[520px] w-full rounded-sm overflow-hidden">
@@ -115,7 +121,7 @@ export default function AboutPage() {
           <SectionHeader
             eyebrow="By the Numbers"
             heading="Scale That Speaks for Itself"
-            subtext="Our growth is a testament to the trust thousands of customers across India have placed in us."
+            subtext="Our growth is a testament to the trust thousands of customers across India have placed in us since 2013."
             light
           />
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-2 divide-x divide-white/10">
@@ -167,17 +173,17 @@ export default function AboutPage() {
                 {
                   Icon: Shield,
                   title: "24-Month Warranty",
-                  body: "All HomzIndia products carry a 24-month warranty covering manufacturing defects and material quality issues.",
+                  body: "Customer trust is our biggest strength. Every product is backed by a 24-month warranty, ensuring reliability, durability, and satisfaction.",
                 },
                 {
                   Icon: Layers,
-                  title: "Imported Certified Leather",
-                  body: "We source only certified imported leather — tested for durability, texture consistency, and surface finish — ensuring your furniture remains premium for years.",
+                  title: "Imported Licensed Materials",
+                  body: "We source certified premium leather and materials from China, rigorously tested for durability, texture consistency, and long-lasting appeal.",
                 },
                 {
                   Icon: Star,
                   title: "Premium Finish Standard",
-                  body: "Every piece is inspected for seam alignment, cushion density, colour consistency, and surface finish before dispatch.",
+                  body: "Every piece of furniture is strictly inspected for seam alignment, cushion density, and surface finish before dispatch to ensure luxury quality.",
                 },
               ].map(({ Icon, title, body }) => (
                 <div key={title} className="flex gap-5">
