@@ -29,7 +29,7 @@ const slides = [
   {
     eyebrow: "END-TO-END CAPABILITY",
     title: "From Manufacturing to Doorstep Delivery",
-    image: "/furnitures/manufacture-making.jpg",
+    image: "/images/manufacture-banner.jpg",
     alt: "HomzIndia Manufacturing & Delivery",
   },
 ] as const;

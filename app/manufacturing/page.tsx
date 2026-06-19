@@ -94,8 +94,8 @@ export default function ManufacturingPage() {
         title="Manufacturing at Scale, Without Compromise"
         subtitle="Our 30,000 sq. ft. facility produces up to 750 premium sofa sets and recliners monthly, driven by state-of-the-art machinery and skilled craftsmen."
         cta={{ text: "View Our Catalogue", href: "/products" }}
-        image="/images/manufacture-banner.jpg"
-        imageAlt="Premium sofa manufacturing"
+        image="/furnitures/manufacture-making.jpg"
+        imageAlt="HomzIndia manufacturing making process"
         imageLeft={true}
       />
 
@@ -131,8 +131,8 @@ export default function ManufacturingPage() {
       <section className="flex flex-col md:grid md:grid-cols-2 md:min-h-[70vh]">
         <div className="relative h-[50vh] min-h-[300px] md:h-auto">
           <Image
-            src="/images/products/mustard-fabric-ottoman-pouffe.jpg"
-            alt="HomzIndia quality leather furniture"
+            src="/images/manufacture-banner.jpg"
+            alt="HomzIndia quality manufacturing commitment"
             fill
             sizes="(max-width: 768px) 100vw, 50vw"
             className="object-cover"
